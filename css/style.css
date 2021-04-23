@@ -1,0 +1,131 @@
+body {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+p {
+    margin: 0;
+}
+i{
+    color: white;
+    font-size: 16px;
+}
+
+h4,h3{
+    margin: 0;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    position: relative;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: white;
+}
+.loader{
+    position: absolute;
+    padding: 15px 50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.modal__window{
+    height: auto;
+    width: 300px;
+    z-index: 20;
+    border-radius: 12px;
+    background-color: white;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.modal__window-content{
+    padding: 1em 1em .5em;
+    border-bottom: 1px solid #ddd;
+}
+.modal__window-header{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    color: #333;
+}
+.modal__window-body{
+    font-size: 14px;
+    color: #333;
+    padding: 16px 0;
+}
+.modal__window-btn{
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: transparent;
+    border: none;
+    font-size: 100%;
+    font-weight: 400;
+    text-decoration: none;
+    text-shadow: 0 0 0 #fff;
+    z-index: 5;
+    white-space: nowrap;
+    color: #0379f4;
+    padding: 15px 0;
+    cursor: pointer;
+}
+.control__panel{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+.control__panel-inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 98%;
+    margin: auto;
+}
+.control__panel-play{
+    margin: 15px 0;
+    position: relative;
+}
+.control__panel-play i{
+    padding: 0 10px;
+}
+.progress__bar{
+    height: 2px;
+    background-color: rgba(255,255,255,.2);
+    width: 98%;
+    display: block;
+    margin: auto;
+}
+.progress__bar:after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 30%;
+    background-color: red;
+}
+.fa-volume-down:before{
+    font-size: 20px;
+}
+.control__panel-set{
+    margin-right: 10px;
+}
+.control__panel-set i:last-child{
+    margin-left: 10px;
+}
+.control__pane-left{
+    display: flex;
+    align-items: center;
+}
+.time{
+    margin: 0 0 5px 10px;
+}
+.ytp-time-separator{
+    padding: 0 5px;
+}
+.fa-expand{
+    margin-right: 10px;
+}
+@media (max-width: 321px) {
+    .modal__window{
+        top: 25%;
+    }
+}
