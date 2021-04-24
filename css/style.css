@@ -3,7 +3,11 @@ body {
     box-sizing: border-box;
 }
 
-p {
+p{
+    margin: 0;
+}
+ul{
+    padding: 0;
     margin: 0;
 }
 i{
@@ -11,23 +15,16 @@ i{
     font-size: 16px;
 }
 
-h4,h3{
+h4,h3,h5{
     margin: 0;
 }
 .main{
     width: 100%;
     height: 100vh;
-    background-color: black;
+    background-color: #999999;
     position: relative;
     font-family: 'Source Sans Pro', sans-serif;
     color: white;
-}
-.loader{
-    position: absolute;
-    padding: 15px 50px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
 .modal__window{
     height: auto;
@@ -36,7 +33,7 @@ h4,h3{
     border-radius: 12px;
     background-color: white;
     position: absolute;
-    top: 30%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -48,11 +45,13 @@ h4,h3{
 .modal__window-header{
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: bold;
-    color: #333;
+    color: black;
+    font-size: 22px;
 }
 .modal__window-body{
-    font-size: 14px;
-    color: #333;
+    font-size: 17px;
+    color: rgba(130, 130, 130, 1.0);
+    line-height: 1.5;
     padding: 16px 0;
 }
 .modal__window-btn{
@@ -69,63 +68,51 @@ h4,h3{
     padding: 15px 0;
     cursor: pointer;
 }
-.control__panel{
-    width: 100%;
-    position: absolute;
-    bottom: 0;
+.window__left-img{
+    width: 80px;
+    height: 80px;
+    border-radius: 14px;
 }
-.control__panel-inner{
+.modal__window-info{
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    width: 98%;
-    margin: auto;
 }
-.control__panel-play{
-    margin: 15px 0;
-    position: relative;
-}
-.control__panel-play i{
-    padding: 0 10px;
-}
-.progress__bar{
-    height: 2px;
-    background-color: rgba(255,255,255,.2);
-    width: 98%;
-    display: block;
-    margin: auto;
-}
-.progress__bar:after{
-    content: "";
-    position: absolute;
-    height: 2px;
-    width: 30%;
-    background-color: red;
-}
-.fa-volume-down:before{
-    font-size: 20px;
-}
-.control__panel-set{
-    margin-right: 10px;
-}
-.control__panel-set i:last-child{
+.window__right-panel{
+    color: black;
+    text-align: left;
     margin-left: 10px;
 }
-.control__pane-left{
+.window__right-panel p{
+    margin: 10px 0;
+}
+.timer{
     display: flex;
+    justify-content: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: black;
+    font-weight: bold;
+    margin: 10px 0;
+    font-size: 18px;
+}
+.button-list{
+    display: flex;
+    justify-content: space-evenly;
     align-items: center;
+    color: black;
 }
-.time{
-    margin: 0 0 5px 10px;
+.list__item{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    width: 50%;
+    list-style: none;
+    text-align: center;
+    padding: 10px 0;
+    cursor: pointer;
 }
-.ytp-time-separator{
+.list__item:first-child{
+    border-right:1px solid #ddd;
+}
+.seconds,
+.minutes{
     padding: 0 5px;
-}
-.fa-expand{
-    margin-right: 10px;
-}
-@media (max-width: 321px) {
-    .modal__window{
-        top: 25%;
-    }
 }
