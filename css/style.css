@@ -1,6 +1,7 @@
 body {
     margin: 0;
     box-sizing: border-box;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 p{
@@ -23,7 +24,7 @@ h4,h3,h5{
     height: 100vh;
     background-color: #999999;
     position: relative;
-    font-family: 'Source Sans Pro', sans-serif;
+    /*font-family: 'Source Sans Pro', sans-serif;*/
     color: white;
 }
 .modal__window{
@@ -39,23 +40,25 @@ h4,h3,h5{
     text-align: center;
 }
 .modal__window-content{
-    padding: 1em 1em .5em;
+    /*padding: 1em 1em .5em;*/
+    padding: 5px 10px;
     border-bottom: 1px solid #ddd;
 }
 .modal__window-header{
-    font-family: 'Source Sans Pro', sans-serif;
+    /*font-family: 'Source Sans Pro', sans-serif;*/
     font-weight: bold;
     color: black;
-    font-size: 22px;
+    font-size: 20px;
 }
 .modal__window-body{
     font-size: 17px;
     color: rgba(130, 130, 130, 1.0);
     line-height: 1.5;
     padding: 16px 0;
+    font-weight: normal;
 }
 .modal__window-btn{
-    font-family: 'Source Sans Pro', sans-serif;
+    /*font-family: 'Source Sans Pro', sans-serif;*/
     background-color: transparent;
     border: none;
     font-size: 100%;
@@ -69,13 +72,13 @@ h4,h3,h5{
     cursor: pointer;
 }
 .window__left-img{
-    width: 80px;
-    height: 80px;
-    border-radius: 14px;
+    width: 90px;
+    height: 100px;
 }
 .modal__window-info{
     display: flex;
     align-items: center;
+    margin-bottom: 20px;
 }
 .window__right-panel{
     color: black;
@@ -83,12 +86,14 @@ h4,h3,h5{
     margin-left: 10px;
 }
 .window__right-panel p{
-    margin: 10px 0;
+    line-height: 1.8em;
+    font-weight: 500;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .timer{
     display: flex;
     justify-content: center;
-    font-family: 'Source Sans Pro', sans-serif;
+    /*font-family: 'Source Sans Pro', sans-serif;*/
     color: black;
     font-weight: bold;
     margin: 10px 0;
@@ -101,7 +106,7 @@ h4,h3,h5{
     color: black;
 }
 .list__item{
-    font-family: 'Source Sans Pro', sans-serif;
+    /*font-family: 'Source Sans Pro', sans-serif;*/
     font-weight: bold;
     width: 50%;
     list-style: none;
